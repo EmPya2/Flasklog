@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="{{url_for("static", filename= "form.css")}}">
+<title>flask app</title>
+</head>
+<body>
+<div class="form-container">
+ <div class="form-card">
+  <div class="img">
+   <img src="{{url_for("static", filename="empya_logo.jpg")}}",  alt="empya logo" id="logo">  
+  </div>
+   <form action="{{url_for("well")}}", method="post">
+    <div class="fields">
+     <input type="text" placeholder="Name" name="name" class="field">
+      <br><br>
+     <input type="email" placeholder="Email" name="email" class="field">
+      <br><br>
+     <input type="password" placeholder="Password" name="pwd" class="field">
+      <br><br>
+     <input type="submit">
+   </form>
+  </div>
+ </div>  
+</div>   
+</body>
+</html>
